@@ -1,0 +1,21 @@
+.movie-desc-2 {
+        text-align: center;
+        padding: 20px;
+    }
+
+.movie-desc-2 p {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+.-img {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+.-img img {
+        max-width: 100%;
+        height: auto;
+        width: 700px; /* Ajustez cette valeur pour contrôler la taille de l'image */
+    }

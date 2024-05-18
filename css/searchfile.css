@@ -1,0 +1,149 @@
+/* style.css */
+
+#search-form {
+    display: flex;
+    align-items: center;
+    position: relative;
+	
+}
+
+.fa-magnifying-glass {
+    font-size: 30px !important; /* Vous pouvez ajuster la taille selon vos préférences */
+    border: none !important; /* Supprime la bordure */
+    background-color: black !important; /* Rend le fond transparent */
+    padding: 0 !important; /* Supprime le remplissage */
+	
+}
+
+#search-input {
+    display: none; /* Hidden by default */
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+
+#search-input.show {
+    display: inline-block;
+	
+}
+
+#results {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    max-height: 200px;
+    overflow-y: auto;
+    display: none;
+}
+
+#results.show {
+    display: block;
+}
+
+#results ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#results li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+#results li:hover {
+    background-color: #f0f0f0;
+}
+
+.search {
+    display: none; /* Cacher le menu par défaut */
+}
+
+.search ul li {
+    margin-bottom: 10px;
+    display: inline-block; /* Afficher les éléments de liste en ligne */
+}
+
+.search ul li input[type="text"] {
+    padding: 4px;
+    border: solid black ; /* Supprime la bordure */
+    border-radius: 5px;
+    background-color: transparent !important; /* Rend le fond transparent */
+    font-size: 14px;
+    width: 120px;
+}
+
+.search ul li input[type="text"]:focus {
+    outline: none; /* Remove default focus outline */
+    border-color: #DE5D83; /* Change border color on focus */
+}
+
+.search ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    display: block; /* Garder les liens en tant que bloc pour le style */
+}
+
+.search ul li a:hover {
+    color: #DE5D83;
+}
+/* Modal styles */
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#results ul {
+    list-style: none;
+    padding: 0;
+}
+
+#results li {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+#results img {
+    width: 50px;
+    height: 75px;
+    margin-right: 10px;
+}
+
